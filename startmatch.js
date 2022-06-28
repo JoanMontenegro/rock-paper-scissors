@@ -1,98 +1,14 @@
-/* 
-1- create function called computerPlay
-2- computerPlay will return Rock, Paper or Scissors.
-3- this function will make the computer play.
-
-
-1. Function computerPlay
-        call function randomChoice
-            this will return a number from 1 to 3.
-    Switch randomChoice
-        case 1 -> Rock
-        case 2 -> Paper
-        case 3 ->Scissors
-
-function randomChoice
-        Math.random() generates a number from 0 to < 1.     
-        multiplicar 3*random + 1.. y se le hace el floor a ese resultado.
-
-Second Part-
-1 Create a function that receives two param playerSelection and ComputerSelection.
-2- return a string declaring who won.
-
---- function gameMatch (playerSelection, ComputerSelection)
-
-  1. Compare selections -- check option caseinsensitive
-
-  .---- if playerSelection and computerSelection are equal-- is a tie
-  if not  
-
-      switch of player selection
-        case rock
-            compare with computerSelection (scissors)
-                win
-            if not 
-                lose
-        case paper
-            compare with computerSelection (rock)
-                win
-            if not 
-                lose
-        case scissors
-            compare with computerSelection (paper)
-                win
-            if not 
-                lose
-        
-        default
-            selection is wrong... do it again
+export default function startMatch(selection) {
 
 
 
 
-  Rock beats scissors,
-  paper beats rock
-  scissors beats paper
 
-
-
-*/
-
-import cardSelected from './selected.js';
-import startMatch from './startmatch.js';
-
-let selection;
-let isCardDisabled = false;
-
-
-document.addEventListener('click', (e) => {
-
-    
-  
-    if(e.target.classList[0] === 'cards' && !isCardDisabled){
-        
-        isCardDisabled = true;
-        selection = cardSelected(e);
-
-
-    }
-    if(e.target.classList[0] === 'start' && isCardDisabled){
-
-        
-        isCardDisabled = false;
-
-    }
-
-
-
-});
+}
 
 
 
 
-//startMatch();
-
-/*
 
 function startMatch()
 {
@@ -231,5 +147,3 @@ function gameRound(playerSelection, computerSelection)
 
 
 }
-
-*/

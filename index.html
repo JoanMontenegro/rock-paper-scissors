@@ -4,11 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Rock|Paper|Scissors</title>
 </head>
 <body>
-<h1>Rock Paper and Scissors!</h1>
+    <header>
+        <h1>Rock Paper and Scissors!</h1>
+    </header>
+    <main>
+        <section class="instruction_section">
+            <h2>Select your card</h2>
+        </section>
+        <section class="cards_section" id="cards_selection">
+            <div class="cards first_card">Rock</div>
+            <div class="cards second_card">Paper</div>
+            <div class="cards third_card">Scissors</div>           
+        </section>
+        <section class="selection_section">
+            <div class="cards_selected card_player"></div>
+            <div class="cards_selected card_computer"></div>
+        </section>
+        <section class="button_section">
+            <div class="button_start_container">
+                <button class="start">start</button>
+            </div>
+        </section>
+    </main>
 
- <script src="./script.js"></script>   
+
+ <script src="./script.js" type="module"></script>   
 </body>
 </html>
